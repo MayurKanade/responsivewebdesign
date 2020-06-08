@@ -1,0 +1,30 @@
+<!--
+So we've proven that id declarations override class declarations, 
+regardless of where they are declared in your style element CSS.
+
+There are other ways that you can override CSS. Do you remember inline styles?
+We just proved that inline styles will override all the CSS declarations in your style element.
+-->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+
+  #orange-text {
+    color: orange;
+  }
+
+  .pink-text {
+    color: pink;
+  }
+
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 style="color: white;" id="orange-text" class="pink-text blue-text">
+  Hello World!
+</h1>
